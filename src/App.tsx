@@ -18,10 +18,11 @@ const App: React.FC = () => {
   return (
     <Layout>
       {marvelData && marvelData.results && marvelData.results.map((result: any) => (
-        <div className="w-60 m-2 mx-auto bg-black border-4" key={result.id}>
-          <img className="w-60 object-cover" src={`${result.thumbnail.path}.${result.thumbnail.extension}`} alt="" />
+       <div className="" key={result.id}>
+
+          <img className="w-80 object-cover" src={`${result.thumbnail.path}.${result.thumbnail.extension}`} alt="" />
             <a href={result.urls[0].url}><p className="text-center p-2 ">{result.title}</p></a>
-            <p className="text-center">${result.prices[0].price}</p>
+          <p className="text-center">${result.prices[0].price}</p>
   
           
         </div>

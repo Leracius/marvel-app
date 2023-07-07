@@ -53,10 +53,10 @@ const FetchComponent = () => {
 
   return (
     <div>
-      <button className="px-4 m-2 p-2 bg-slate-700"  onClick={handlePreviousPage} disabled={offset === 0}>
+      <button className="px-4 m-2 p-2 bg-slate-700 hover:animate-bounce"  onClick={handlePreviousPage} disabled={offset === 0}>
         Anterior
       </button>
-      <button className="px-4 m-2 p-2 bg-slate-700" onClick={handleNextPage}>Siguiente</button>
+      <button className="px-4 m-2 p-2 bg-slate-700 hover:animate-bounce" onClick={handleNextPage}>Siguiente</button>
     </div>
   );
 };

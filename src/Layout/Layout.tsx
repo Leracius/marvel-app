@@ -11,22 +11,20 @@ const Layout = ({ children }: { children: ReactNode }) => {
     
   
     <div className='header'>
-      <p>MARVEL REACT-TYPE-TAILWIND</p>
-      <p>Made by Axel.</p>
+      <p className='animate-bounce'>Made by Axel</p>
     </div>
     <h1 className='titulo'>COMICS</h1>
-    <img src="https://res.cloudinary.com/dbo7lbynt/image/upload/v1688712037/assets-integrador/marvel-api/77dc7d33347e3fec1359b39c901bbfe9_tovbed.gif" alt="" />
     <div className="flex flex-wrap justify-center gap-2 m-10" >
       {children}
       <div className='link-box'>
 
-        <div className='flex'>
-          <FaReact className='m-2' size={35} color={'#30c3cd'} />
-          <SiTailwindcss className='m-2' size={35} color={'#01a8f6'} />
+        <div className='flex p-4'>
+          <FaReact className='m-2 animate-spin' size={35} color={'#30c3cd'} />
+          <SiTailwindcss className='m-2 animate-pulse' size={35} color={'#01a8f6'} />
           <SiTypescript className='m-2' size={35} color={'#3b32d8'} />
-          <SiRedux className='m-2' size={35} color={'#8401f6'} />
+          <SiRedux className='m-2 animate-ping' size={35} color={'#8401f6'} />
         </div>
-        <a className='' href="https://github.com/Leracius">Leracius</a>
+        <a className='animate-bounce' href="https://github.com/Leracius">Leracius</a>
           <BiLogoGithub className='m-2' size={35} color='white' />
 
       </div>
